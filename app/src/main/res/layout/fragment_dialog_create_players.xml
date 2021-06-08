@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/create_players_dialog_button_close"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_gravity="start|center"
+                app:srcCompat="@drawable/ic_close_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/create_players_dialog_button_save"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_gravity="end|center"
+                app:srcCompat="@drawable/ic_done_white_24dp" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutPlayerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:theme="@style/TextInputLayout_CustomColors"
+            android:elevation="1sp"
+            android:hint="Player Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/player_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:focusableInTouchMode="true"
+                android:textColor="@color/primary_text_color"
+                android:theme="@style/TextInputLayout_CustomColors"
+                android:drawableRight="@drawable/ic_cancel_black_24dp"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="18sp"
+            android:paddingLeft="4sp"
+            android:theme="@style/TextInputLayout_CustomColors"
+            android:textColor="@color/color_primary_variant"
+            android:elevation="1sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Player Type" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="6sp"
+            android:id="@+id/player_select_radiogroup_line1"
+            android:theme="@style/TextInputLayout_CustomColors">
+                <RadioButton
+                    android:id="@+id/batsmen_radiobutton"
+                    style="@style/RadioButton_CustomColors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="48dp"
+                    android:elevation="1sp"
+                    android:text="Batsmen" />
+                <RadioButton
+                    android:id="@+id/bowler_radiobutton"
+                    style="@style/RadioButton_CustomColors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:paddingRight="32dp"
+                    android:paddingLeft="32dp"
+                    android:elevation="1sp"
+                    android:text="Bowler" />
+                <RadioButton
+                    android:id="@+id/allrounder_radiobutton"
+                    style="@style/RadioButton_CustomColors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:paddingRight="32dp"
+                    android:paddingLeft="32dp"
+                    android:elevation="1sp"
+                    android:text="All Rounder" />
+                <RadioButton
+                    android:id="@+id/wk_radiobutton"
+                    style="@style/RadioButton_CustomColors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:paddingRight="32dp"
+                    android:paddingLeft="32dp"
+                    android:elevation="1sp"
+                    android:text="Wicket Keeper" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

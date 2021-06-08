@@ -1,0 +1,159 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.MyApp" parent="Theme.AppCompat">
+        <!-- Original AppCompat attributes. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorSecondary">@color/color_secondary</item>
+        <item name="android:colorBackground">@color/color_black_background</item>
+        <item name="colorError">@color/color_error</item>
+        <!-- New MaterialComponents attributes. -->
+        <item name="colorPrimaryVariant">@color/color_primary_variant</item>
+        <item name="colorSecondaryVariant">@color/color_secondary_variant</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="colorOnPrimary">@color/color_primary</item>
+        <item name="colorOnSecondary">@color/color_secondary</item>
+        <item name="colorOnBackground">@color/color_black_background</item>
+        <item name="colorOnError">@color/color_error</item>
+        <item name="colorOnSurface">@color/color_surface</item>
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1
+        </item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2
+        </item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3
+        </item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4
+        </item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5
+        </item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6
+        </item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1
+        </item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2
+        </item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
+        <item name="colorAccent">@color/mtrl_scrim_color</item>
+        <item name="android:textColorPrimary">@color/color_on_primary</item>
+        <item name="android:textColorSecondary">@color/color_on_secondary</item>
+        <item name="android:textColorTertiary">@color/material_on_surface_disabled</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListViewStyle</item>
+    </style>
+
+    <style name="Theme.MyApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MyApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MyApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.FullScreenDialog" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/mtrl_scrim_color</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionMenuTextColor">@color/mtrl_scrim_color</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="MaterialAnimations" parent="@style/Theme.MyApp">
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="TextInputLayout_CustomColors" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.MaterialComponents.TextInputEditText.FilledBox
+        </item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearanceOverlay.MaterialComponents.TextInputLayout.FilledBox
+        </item>
+        <item name="boxBackgroundMode">filled</item>
+        <item name="boxBackgroundColor">@color/text_background</item>
+        <item name="boxStrokeColor">@color/color_on_primary</item>
+        <!--        <item name="endIconTint">@color/mtrl_on_primary_emphasis_medium</item>-->
+        <!--        <item name="startIconTint">@color/mtrl_on_surface_disabled</item>-->
+        <item name="colorAccent">@color/secondary_text_color</item>
+        <item name="colorSurface">@color/color_black_background</item>
+        <item name="colorOnSurface">@color/text_background</item>
+        <item name="colorControlNormal">@color/color_primary</item>
+        <item name="colorControlActivated">@color/color_primary_variant</item>
+        <item name="colorControlHighlight">@android:color/holo_green_dark</item>
+        <item name="android:textColorHint">@color/secondary_text_color</item>
+        <item name="android:textColor">@color/text_accent_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="boxCollapsedPaddingTop">8dp</item>
+    </style>
+
+    <style name="RadioButton_CustomColors" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:buttonTint">@color/color_primary</item>
+        <item name="android:colorControlNormal">@color/color_primary</item>
+        <item name="android:colorControlHighlight">@color/hinttext_underline_divider_color</item>
+        <item name="android:colorControlActivated">@color/color_primary_variant</item>
+    </style>
+
+    <style name="Checkbox_CustomColors" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:buttonTint">@color/color_primary</item>
+        <item name="android:colorControlNormal">@color/color_primary</item>
+        <item name="android:colorControlActivated">@color/color_primary_variant</item>
+    </style>
+
+    <style name="DropDownListViewStyle" parent="Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:dividerHeight">0dp</item>
+        <item name="colorControlNormal">@color/color_primary</item>
+        <item name="colorControlActivated">@color/color_primary_variant</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textColorHint">@color/secondary_text_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:actionBarDivider">@drawable/scrollbar</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_variant</item>
+        <item name="colorAccent">@color/text_accent_color</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextInputLayout_forActivity" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_variant</item>
+        <item name="colorAccent">@color/text_accent_color</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+        <item name="android:textColorHint">@color/secondary_text_color</item>
+        <item name="boxStrokeColor">@color/color_primary</item>
+    </style>
+
+    <style name="CustomSpinner_StyleLayout">
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">left|start|center_vertical</item>
+        <item name="overlapAnchor">true</item>
+        <item name="android:textColor">@color/primary_text_color</item>
+    </style>
+
+</resources>

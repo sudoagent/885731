@@ -1,0 +1,64 @@
+<resources>
+    <!-- Main Activity Strings -->
+    <string name="app_name">Cricket Score Sheet</string>
+    <string name="MainActivity_MyTeamsButtonText">My Teams</string>
+    <string name="MainActivity_ResumeButtonText">Resume My Match</string>
+    <string name="MainActivity_NewMatchButtonText">Start a New Match</string>
+    <string name="MainActivity_HistoryMatchesButtonText">My Previous Matches</string>
+    <string name="MainActivity_TournamentButtonText">Tournaments</string>
+    <string name="title_activity_my_teams">My Teams</string>
+
+    <!-- New Match Activity Strings -->
+    <string name="newmatchactivity_title">Start a New Match</string>
+    <string name="NewMatchActivity_SubmitButtonText">Start Match</string>
+    <string name="NewMatchActivity_CancelButtonText">Cancel</string>
+
+    <!-- Create Teams Fragment -->
+    <string name="create_team_fragment_dialog_title">Create a New Team</string>
+    <string name="team_name_hint">Please enter the team name</string>
+
+    <!-- Player stats -->
+    <string name="title_activity_player_stats">Player Stats</string>
+
+    <!-- Navigation menu open & close -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <!-- Navigation menu items -->
+    <string name="nav_title">Scorecard Menu</string>
+    <string name="ScoreCard">Scorecard</string>
+    <string name="ChangeStriker">Change Striker</string>
+    <string name="ChangeNonStriker">Change Non-Striker</string>
+    <string name="ChangeBowler">Change Bowler</string>
+    <string name="BattScoreCard">Batting Scorecard</string>
+    <string name="BowlScoreCard">Bowling Scorecard</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+
+    <!-- Score sheet Activity -->
+    <string name="scoresheetactivity_title">@string/app_name</string>
+
+    <string-array name="toss_winner_selection">
+        <item>Toss winner</item>
+    </string-array>
+
+    <string-array name="toss_selection">
+        <item></item>
+        <item>Bowl First</item>
+        <item>Bat First</item>
+    </string-array>
+
+    <string-array name="score_sheet_menu_array">
+        <item>Scorecard</item>
+        <item>Change Striker</item>
+        <item>Change Non-Striker</item>
+        <item>Change Bowler</item>
+        <item>Batting Scorecard</item>
+        <item>Bowling Scorecard</item>
+    </string-array>
+    <string name="tab_text_1">Stats</string>
+    <string name="tab_text_2">Graph</string>
+</resources>

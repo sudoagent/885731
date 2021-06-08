@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/extras_dialog_button_save"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_gravity="end|center"
+                app:srcCompat="@drawable/ic_done_white_24dp" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTint="@color/white_color"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/primary_text_color" />
+
+        <EditText
+            android:id="@+id/additionalRuns"
+            style="@style/DropDownListViewStyle"
+            android:dropDownHeight="250dp"
+            android:layout_width="match_parent"
+            android:digits="0123456789"
+            android:completionThreshold="1"
+            android:maxLength="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:hint="Additional Runs - leave empty if none" />
+        <CheckBox
+            android:id="@+id/batsmenCrossCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            style="@style/Checkbox_CustomColors"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/primary_text_color"
+            android:layout_marginEnd="10dp"
+            android:text="Batsmen Crossed over ?" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#1e88e5</color>
+    <color name="color_primary_variant">#1565c0</color>
+    <color name="color_secondary">#03dac6</color>
+    <color name="color_secondary_variant">#018786</color>
+
+    <color name="color_black_background">#ffffff</color>
+    <color name="color_surface">#ffffff</color>
+    <color name="color_error">#b00020</color>
+    <color name="color_on_primary">#ffffff</color>
+    <color name="color_on_secondary">#000000</color>
+    <color name="color_on_background">#000000</color>
+    <color name="color_on_surface">#000000</color>
+    <color name="color_on_error">#ffffff</color>
+
+    <color name="mtrl_scrim_color">#018786</color>
+
+    <color name="four_six_button_color">#00a125</color>
+    <!-- Text Color pallete -->
+    <color name="primary_text_color">#212121</color>
+    <color name="secondary_text_color">#757575</color>
+    <color name="hinttext_underline_divider_color">#d9d9d9</color>
+    <color name="text_accent_color">#03A9F4</color>
+    <color name="text_background">#f7f7f7</color>
+    <color name="white_color">#ffffff</color>
+</resources>

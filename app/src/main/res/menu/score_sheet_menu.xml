@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mainScorecard"
+        android:icon="@drawable/ic_score_card_grey_24dp"
+        android:title="@string/ScoreCard"/>
+    <item android:id="@+id/editStriker"
+        android:icon="@drawable/ic_edit_icon_grey_24dp"
+        android:title="@string/ChangeStriker"/>
+    <item android:id="@+id/editNonStriker"
+        android:icon="@drawable/ic_edit_icon_grey_24dp"
+        android:title="@string/ChangeNonStriker"/>
+    <item android:id="@+id/editBowler"
+        android:icon="@drawable/ic_edit_icon_grey_24dp"
+        android:title="@string/ChangeBowler"/>
+    <item android:id="@+id/viewBattScoreCard"
+        android:icon="@drawable/ic_score_card_grey_24dp"
+        android:title="@string/BattScoreCard"/>
+    <item android:id="@+id/viewBowlScoreCard"
+        android:icon="@drawable/ic_score_card_grey_24dp"
+        android:title="@string/BowlScoreCard"/>
+</menu>
